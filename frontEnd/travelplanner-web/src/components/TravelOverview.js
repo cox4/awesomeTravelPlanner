@@ -7,6 +7,7 @@ import { API_ROOT } from "../constants"
 
 import { WrappedTravelMap } from "./TravelMap";
 import { Link } from "react-router-dom";
+import {TravelStartDayInput} from './TravelStartDayInput'
 
 
 export class TravelOverview extends React.Component {
@@ -174,17 +175,19 @@ export class TravelOverview extends React.Component {
                     handleOnDayChange={this.handleOnDayChange}
                     //loadNearbyPosts={this.loadNearbyPosts}
                 />
-                <Link
-                    onClick={this.onGeneratePathsButtonPressed}
-                    to={{
-                    pathname: "/detail",
-                    state: {
-                        points: this.state.points
-                    }
+                <TravelStartDayInput/>
+                {/*<Link*/}
+                    {/*onClick={this.onGeneratePathsButtonPressed}*/}
+                    {/*to={{*/}
+                    {/*pathname: "/detail",*/}
+                    {/*state: {*/}
+                        {/*points: this.state.points*/}
+                    {/*}*/}
 
-                }}>
-                    "Generate Paths"
-                </Link>
+                {/*}}>*/}
+                    {/*"Generate Paths"*/}
+
+                {/*</Link>*/}
             </div>
         );
     }

@@ -8,3 +8,13 @@ export const GEO_OPTIONS = {
 export const POS_KEY = "POS_KEY";
 export const AUTH_PREFIX = 'Bearer';
 export const LOC_SHAKE = 0.02;
+export const formItemLayout = {
+    labelCol: {
+        xs: { span: 24 },
+        sm: { span: 5 },
+    },
+    wrapperCol: {
+        xs: { span: 24 },
+        sm: { span: 12 },
+    },
+};
